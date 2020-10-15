@@ -42,7 +42,7 @@ import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 
 import SimpleUploadAdapter from './simpleuploadadapterstrapi';
 
-class Editor extends ClassicEditor {}
+export default class Editor extends ClassicEditor {}
 
 // Plugins to include in the build.
 Editor.builtinPlugins = [
@@ -84,7 +84,6 @@ Editor.builtinPlugins = [
 	SimpleUploadAdapter,
 	TableCellProperties,
 ];
-
 
 Editor.defaultConfig =  {
 	toolbar: {
@@ -308,5 +307,3 @@ Editor.defaultConfig =  {
 	},
 	licenseKey: '',
 }
-
-export default Editor;
